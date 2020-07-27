@@ -1,0 +1,252 @@
+body {
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    background-color: #61f1f7;
+}
+
+.op, #choose, #choose_difficulty, .difficulty, #game, #lg, #ready, #result, #end, #back, #rules {
+    display: none;
+}
+
+#lg {
+    padding: 20px 35px;
+}
+
+#help {
+    color: #0169d0;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    background-color: #03f1ed;
+}
+
+#help::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+#help:hover::before {
+    background-color: #fff;
+    top: 0;
+}
+
+#help:hover {
+    color: #007bff;
+    border: 3px solid #007bff;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#name {
+    color: #04343b;
+    font-family: "Comic Sans", "Comic Sans MS", sans-serif;
+    font-size: 64px;
+    text-shadow: 3px 3px 5px #00b2ff, 2px 2px 5px #00ff6a;
+}
+
+#new {
+    background: linear-gradient(45deg, #7edfff, #00f);
+    font-size: 24px;
+}
+
+#new:hover {
+    font-size: 28px;
+    border: 4px solid #3434f9;
+    background: linear-gradient(90deg, #7edfff, #3434f9, #7edfff);
+}
+
+#choose {
+    color: #105e21;
+}
+
+#choose_difficulty {
+    color: #790909;
+}
+
+#ready {
+    color: #be8f01;
+}
+
+#operation-wrap .active {
+    color: #b02525;
+    background-color: #fff;
+    border: 5px solid #b02525;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#operation-wrap .op {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+#operation-wrap .op::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+#operation-wrap .op:hover::before {
+    background: #fff;
+    right: 0;
+}
+
+#operation-wrap .op:hover {
+    color: #28a745;
+    border: 4px solid #28a745;
+}
+
+#operation-wrap .op:hover i {
+    font-size: 20px;
+}
+
+#difficulty-wrap {
+    display: flex;
+}
+
+#difficulty-wrap .difficulty {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    width: 100px;
+}
+
+#difficulty-wrap .difficulty::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+#difficulty-wrap .difficulty:hover::before {
+    background-color: #fff;
+    right: 0;
+}
+
+#difficulty-wrap .difficulty:hover {
+    color: #b02525;
+    border: 3px solid #b02525;
+}
+
+
+#lg {
+    padding: 20px 35px;
+    font-size: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    background-color: #ba8b00;
+}
+
+#lg::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+#lg:hover::before {
+    background-color: #fff;
+    top: 0;
+}
+
+#lg:hover {
+    color: #b04825;
+    border: 3px solid #b04825;
+    font-size: 28px;
+    font-weight: 600;
+}
+#question {
+    font-size: 36px;
+    color: #105e21;
+}
+
+#timer {
+    font-size: 54px;
+    color: #721c24;
+}
+
+
+#game input {
+    text-align: center;
+    width: 305px;
+    font-size: 24px;
+    padding: 8px 0;
+    color: #721c24;
+}
+
+#game input:focus {
+    border: 2px solid #721c24;
+}
+
+#game .number {
+    font-size: 28px;
+    padding: 8px 40px;
+    font-family: "Lucida Bright", Calibri, sans-serif;
+    font-weight: 600;
+}
+
+#game .number:hover {
+    background-color: #fff;
+    color: #bd2130;
+    border: 2px solid #bd2130;
+}
+
+#backspace {
+    font-size: 28px;
+    padding: 8px 24px;
+
+}
+#clear, #next {
+    font-size: 28px;
+    padding: 10px 37px;
+}
+
+#apreciation {
+    color: #b04825;
+}
+
+#correctanswer {
+    color: #b04825;
+}
+
+@media (max-width: 768px) {
+    #operation-wrap .active {
+        font-size: 18px;
+    }
+    #difficulty-wrap {
+        display: block;
+    }
+    #difficulty-wrap .btn {
+        margin-bottom: 10px;
+        margin-left: 12px;
+    }
+    #rules h2 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths game</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body id="body">
+    <div class="container">
+        <div class="row d-flex flex-column">
+            <div id="name-wrap">
+                <h1 class="text-center p-5" id="name">Maths Game</h1>
+            </div>
+            <div align="center">
+                <button class="btn btn-primary w-50 p-3" id="new"><b>NEW GAME</b></button>
+                <br>
+                <button id="help" class="btn btn-secondary mt-5">Rules</button>
+                <h2 class="mb-5" id="ready">Are you ready?</h2>
+                <button id="lg" class="btn btn-secondary">Let's go!</button>
+            </div>
+        </div>
+
+
+        <div id="rules" class="col-8 offset-2 mt-4">
+            <h2 class="text-center" style="color: #007bff">Maths Game Rules</h2>
+            <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam asperiores atque earum eius est expedita id officiis,
+                porro quis quod repudiandae saepe unde, veniam veritatis vitae voluptate! Assumenda commodi doloremque ea esse eveniet
+                explicabo fuga harum impedit ipsam magnam maiores minus odio praesentium ratione repellendus repudiandae sequi soluta
+                sunt tenetur, veniam. Accusamus beatae dolores ducimus eaque illum, officiis soluta tempora veniam. </p>
+        </div>
+
+        <p class="pl-5" id="choose"><i><b>Choose an operation:</b></i></p>
+        <div class="row">
+            <div class="col-6 offset-3" id="operation-wrap">
+                <p id="addition" class="op btn btn-success w-100 p-3"><i class="fas fa-plus-square"></i> Addition <i class="fas fa-plus-square"></i></p>
+                <p id="subtraction" class="op btn btn-success w-100 p-3"><i class="fas fa-minus-circle"></i> Subtraction <i class="fas fa-minus-circle"></i></p>
+                <p id="multiplication" class="op btn btn-success w-100 p-3"><i style="font-weight: 700">X</i> Multiplication <i style="font-weight: 700">X</i></p>
+                <p id="division" class="op btn btn-success w-100 p-3"><i class="fas fa-divide"></i> Division <i class="fas fa-divide"></i></p>
+                <p id="mixed" class="op btn btn-success w-100 p-3"><i class="fas fa-plus-circle"></i> Mixed <i style="font-weight: 700">X</i></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 mx-5">
+                <p id="choose_difficulty"><i><b>Choose Difficulty: </b></i></p>
+            </div>
+            <div class="col-5 col-md-6 text-center" id="difficulty-wrap">
+                <p class="difficulty btn btn-danger" id="easy">Easy</p>
+                <p class="difficulty btn btn-danger ml-lg-4 ml-md-4" id="medium">Medium</p>
+                <p class="difficulty btn btn-danger ml-lg-4 ml-md-4" id="hard">Hard</p>
+            </div>
+        </div>
+
+
+        <div id="game">
+            <h5 class="route pb-5 text-danger font-weight-bolder"></h5>
+            <div id="time" class="text-center my-3">
+                <span id="timer"></span>
+            </div>
+            <p id="question" class="text-center my-3"></p>
+            <div class="numbers-wrap col-lg-4 col-md-12 offset-lg-4 mb-5" align="center">
+                <input type="text" id="enter" autofocus class="my-4">
+                <table class="">
+                    <tr>
+                       <td><button id="1" value="1" class="btn number btn-danger">1</button></td>
+                       <td><button id="2" value="2" class="btn number btn-danger">2</button></td>
+                       <td><button id="3" value="3" class="btn number btn-danger">3</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" value="4" class="btn number btn-danger">4</button></td>
+                        <td><button id="5" value="5" class="btn number btn-danger">5</button></td>
+                        <td><button id="6" value="6" class="btn number btn-danger">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7" value="7" class="btn number btn-danger">7</button></td>
+                        <td><button id="8" value="8" class="btn number btn-danger">8</button></td>
+                        <td><button id="9" value="9" class="btn number btn-danger">9</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="0" value="0" class="btn number btn-danger">0</button></td>
+                        <td colspan="2"><button id="backspace" class="btn btn-dark">BackSpace</button></td>
+                    </tr>
+                </table>
+                <button id="clear" class="btn btn-dark">Clear</button>
+                <button id="next" class="btn btn-primary">NEXT</button>
+            </div>
+        </div>
+        <div id="end" class="text-center">
+            <h5 class="route pb-5 text-danger font-weight-bolder"></h5>
+            <h1 id="score"></h1>
+            <br/>
+            <p id="apreciation"></p>
+            <hr>
+            <h5 id="correctanswer"></h5>
+        </div>
+        <a href="index.html"><button id="back" class="btn btn-info">Back</button></a>
+    </div>
+</body>
+<script src="jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>
+
