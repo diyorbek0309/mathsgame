@@ -323,6 +323,11 @@ $(document).ready(function () {
         function exit() {
             $("#game").hide();
             $("#end, #back").show();
+            
+            $('#back').click(function () {
+                $('#end, #back').hide();
+                $('#new').show();
+            });
 
             if (difficulty === "medium")
                 score = Math.floor(score * 1.5);
@@ -360,11 +365,6 @@ $(document).ready(function () {
                 newQuestion();
             }
         });
-        
-         $('#back').click(function () {
-                $('#end, #back').hide();
-                $('#new').show();
-            });
         });
     });
 });
