@@ -360,6 +360,11 @@ $(document).ready(function () {
                 newQuestion();
             }
         });
+        
+         $('#back').click(function () {
+                $('#end, #back').hide();
+                $('#new').show();
+            });
         });
     });
 });
